@@ -1,4 +1,20 @@
+/*
+------------------------------------------------------------
+LeetCode 14 - Longest Common Prefix
+Difficulty : Easy
+Language   : Java
+------------------------------------------------------------
 
+Approach:
+1. Sort the array.
+2. Compare the first and last strings.
+3. The common prefix between them is the answer because
+   all other strings lie between them after sorting.
+4. Stop at the first mismatch.
+
+Time Complexity : O(n log n + m)
+Space Complexity: O(1)
+ */
 import java.util.Arrays;
 
 public class Problem14 {
