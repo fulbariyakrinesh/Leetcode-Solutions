@@ -24,7 +24,7 @@
     Space Complexity: O(1)
 */
 
-public class problem3014 {
+public class Problem3014 {
 
     public static int minimumPushes(String word) {
 
