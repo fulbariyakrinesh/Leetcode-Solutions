@@ -3,30 +3,19 @@ import java.util.*;
 public class Problem349 {
 
     public static int[] intersection(int[] nums1, int[] nums2) {
-
-        // HashMap to store elements of nums1
         Map<Integer, Integer> map = new HashMap<>();
-
-        // Store each element of nums1 in the map
         for (int num : nums1) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-
-        // ArrayList to store unique common elements
         List<Integer> resultList = new ArrayList<>();
-
-        // Traverse nums2
         for (int num : nums2) {
-
-            // If element exists in map,
-            // add it once and remove it to avoid duplicates
             if (map.containsKey(num)) {
                 resultList.add(num);
                 map.remove(num);
             }
         }
 
-        // Convert ArrayList to int[]
+ 
         int[] result = new int[resultList.size()];
 
         for (int i = 0; i < resultList.size(); i++) {
